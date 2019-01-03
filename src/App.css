@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; 
+  border-bottom: 1px solid #cccccc;
+}
+
+.header .logo {
+  height: 50px;
+}
+
+.header .menu-btn {
+  background: transparent;
+  border: 0;
+  color: #cccccc;
+  font-size: 20px;
+  margin: 0 2em;
+  cursor: pointer;
+}
+
+.header .search-bar {
+  position: relative;
+}
+
+.header .search-bar input {
+  border: 1px solid #cccccc;
+  border-radius: 15px;
+  font-size: 1em;
+  padding: 5px 1em 5px 2em;
+}
+
+.header .search-bar input:focus {
+  outline: 0;
+}
+
+.header .search-bar .search-icon {
+  color: #cccccc;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.page-layout{
+  display: grid;
+}
+
+.page-layout.sidebar {
+  grid-template-columns: 200px 1fr;
+}
+
+.sidebar .nav-menu {
+  padding: 0;
+  margin: 1em 0;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu li a{
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0.5em 1em;
+  color: grey;
+  display: flex;
+  align-items: center;
+  border-left: 5px solid transparent;
+  text-transform: uppercase;
+}
+
+.nav-menu li a.active {
+  background: rgba(246, 145, 76, 0.2);
+  color: #f6914c;
+  font-weight: bold;
+  border-radius: 0 25px 25px 0;
+  border-color: #f6914c;
+}
+
+.nav-menu li a .icon {
+  height: 24px;
+  margin-right: 1em;
+  display: inline-block;
+}
+
+.nav-menu li a .active-icon{
+  display: none;
+}
+
+.nav-menu li a.active .active-icon {
+  display: inline-block;
+}
+
+.nav-menu li a.active .inactive-icon {
+  display: none;
+}
+
+.page-content {
+  padding: 0em 2em;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
